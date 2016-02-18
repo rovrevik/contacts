@@ -1,0 +1,18 @@
+
+<div class="panel panel-default">
+    <div class="panel-heading">Contact List
+        <button class="btn btn-primary pull-right btn-xs" ng-click="create()">Add Contact</button>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2">First Name</div>
+        <div class="col-md-2">Last Name</div>
+    </div>
+    <div class="row" ng-repeat="contact in contacts">
+        <div class="col-md-1"><a class="btn btn-primary pull-right btn-xs" ng-click="edit(contact._id)">Edit</a></div>
+        <div class="col-md-1"><a class="btn btn-primary pull-right btn-xs" ng-click="remove(contact._id)">Remove</a></div>
+        <div class="col-md-2">{{contact.firstName}}</div>
+        <div class="col-md-2">{{contact.lastName}}</div>
+    </div>
+</div>

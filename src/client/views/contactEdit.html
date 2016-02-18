@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+    <div class="panel-heading">{{viewName}} Contact</div>
+    <form novalidate autocomplete="on">
+        <div class="form-group" show-errors>
+            <label for="contact.firstName">First Name</label>
+            <input type="text" id="contact.firstName" name="contact.firstName" class="form-control" ng-model="contact.firstName" placeholder="First Name" required>
+        </div>
+        <div class="form-group" show-errors>
+            <label for="contact.lastName">Last Name</label>
+            <input type="text" id="contact.lastName" name="contact.lastName" class="form-control" ng-model="contact.lastName" placeholder="Last Name" required>
+        </div>
+        <div class="text-center form-group">
+            <button type="submit" class="btn btn-primary" ng-click="saveOrUpdate()">Save</button>
+        </div>
+        <div class="well">
+            <label>http response: </label> {{responseContent}}
+        </div>
+    </form>
+</div>
